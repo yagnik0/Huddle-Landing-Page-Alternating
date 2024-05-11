@@ -1,1 +1,73 @@
+:root {
+    --pink:hsl(322, 100%, 66%);
+    --palecyan:hsl(193, 100%, 96%);
+    --darkcyan:hsl(192, 100%, 9%);
+    --gray:hsl(208, 11%, 55%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.8rem;
+    font-family:"Open Sans", sans-serif ;
+}
+
+main{
+    background-image: url(images/bg-hero-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--palecyan);
+    max-width: 130rem;
+}
+
+.hero-section{
+    margin-inline: auto;
+}
+
+header{
+    display: flex;
+    padding: 5.7rem 8rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5.8rem;
+}
+
+.head-btn{
+    border: 1px solid black;
+}
+
+.grid-content-hero{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-1-col{
+    padding: 4rem;
+}
+
+.hero-2-col img{
+    width: 600px;
+    height: 485px;
+}
+
+.hero-head{
+    font-size: 3.9rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2.9rem;
+}
+
+.hero-para{
+    line-height: 26.4px;
+}
+
 
