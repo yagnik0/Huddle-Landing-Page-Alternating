@@ -13,25 +13,31 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
     font-size: 1.8rem;
     font-family:"Open Sans", sans-serif ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main{
+   max-width: 130rem;
+}
+
+.hero-content{
     background-image: url(images/bg-hero-desktop.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--palecyan);
-    max-width: 130rem;
 }
 
-.hero-section{
-    margin-inline: auto;
-}
+/* Header styling */
+
 
 header{
     display: flex;
@@ -42,17 +48,34 @@ header{
 }
 
 .head-btn{
-    border: 1px solid black;
+    font-size: 1.3rem;
+    border: none;
+    padding: 1.4rem 5.5rem;
+    border-radius: 5.7rem;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+.head-btn:hover{
+    color: var(--gray);
+}
+
+/* Hero Section Styling */
 
 .grid-content-hero{
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
+    padding-inline: 6rem;
+    padding-bottom: 5rem;
 }
 
 .hero-1-col{
-    padding: 4rem;
+    padding: 4.8rem;
 }
 
 .hero-2-col img{
@@ -64,10 +87,73 @@ header{
     font-size: 3.9rem;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 2.9rem;
+    font-weight: 600;
+    color: var(--darkcyan);
 }
 
 .hero-para{
     line-height: 26.4px;
+    margin-bottom: 3.2rem;
+    color: var(--darkcyan);
 }
+
+.hero-btn{
+    font-size: 1.3rem;
+    border: none;
+    padding: 2.2rem 6.2rem;
+    border-radius: 5.7rem;
+    background-color: var(--pink);
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.hero-btn:hover{
+    background-color: rgb(230, 178, 217);
+}
+
+/* Grow-together Section */
+
+.grow-content{
+    margin-top: 14rem;
+    padding-inline: 3.2rem;
+}
+
+.grow-grid{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+}
+
+.grow-info{
+    padding-left: 12rem;
+}
+
+.grow-head{
+    font-size: 2.8rem;
+    margin-bottom: 1.1rem;
+    font-weight: 600;
+}
+
+.grow-para{
+    color: var(--gray);
+    line-height: 26px;
+    font-size: 1.7rem;
+}
+
+.grow-image{
+    margin-block:5rem
+}
+
+.grow-image img{
+    width: 420px;
+}
+
+
+
 
 
