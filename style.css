@@ -115,43 +115,86 @@ header{
 
 /* Grow-together Section */
 
-.grow-content{
+.grow-together{
     margin-top: 14rem;
-    padding-inline: 3.2rem;
+    padding-inline: 3.6rem;
 }
 
-.grow-grid{
+.grow-grid, .flowing-grid, .user-grid{
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    margin-bottom: 4rem;
     border-radius: 1rem;
 }
 
-.grow-info{
+.grow-info, .flowing-info, .user-info{
     padding-left: 12rem;
+    padding-right: 2rem;
 }
 
-.grow-head{
+.grow-head, .flowing-head, .user-head{
     font-size: 2.8rem;
     margin-bottom: 1.1rem;
     font-weight: 600;
 }
 
-.grow-para{
+.grow-para, .flowing-para, .user-para{
     color: var(--gray);
     line-height: 26px;
     font-size: 1.7rem;
 }
 
-.grow-image{
+.fig-image{
     margin-block:5rem
 }
 
-.grow-image img{
+.fig-image img{
     width: 420px;
 }
+
+/* Flowing Conversation Section */
+
+.flowing-conversation, .user-section{
+    margin-top: 4rem;
+    padding-inline: 3.6rem;
+}
+
+/* Users Sections */
+.user-section{
+    margin-bottom: 34.2rem;
+}
+
+/* Footer Section */
+
+.footer-section{
+    background-color: var(--darkcyan);
+    padding: 16rem 12rem;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    color: #fff;
+}
+
+.footer-info-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    column-gap: 2.5rem;
+    row-gap: 2.6rem;
+}
+
+.logo-info{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+
 
 
 
