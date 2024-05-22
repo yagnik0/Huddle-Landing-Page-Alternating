@@ -119,6 +119,12 @@ header{
     padding-inline: 3.6rem;
 }
 
+.grow-together{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .grow-grid, .flowing-grid, .user-grid{
     display: grid;
     place-items: center;
@@ -145,11 +151,16 @@ header{
 }
 
 .fig-image{
-    margin-block:5rem
+    margin-block:5rem;
 }
 
 .fig-image img{
     width: 420px;
+    transition:  all 0.2s;
+}
+
+.fig-image img:hover{
+    transform: scale(1.1);
 }
 
 /* Flowing Conversation Section */
@@ -158,9 +169,6 @@ header{
     margin-top: 4rem;
     padding-inline: 3.6rem;
 }
-
-/* Users Sections */
-
 
 /* Subscribe Box */
 
@@ -178,7 +186,6 @@ header{
     position: absolute;
     top: -20%;
     background-color: #fff;
-    /* margin-top: 16rem; */
 }
 
 .box-content h1{
@@ -210,7 +217,6 @@ header{
     padding: 23rem 12rem 6rem;
     position: relative;
     margin-top: 30rem;
-    /* margin-top: 18rem; */
 }
 
 .footer-flex{
@@ -271,6 +277,85 @@ header{
     color: #fff;
     font-size: 1.2rem;
     text-align: end;
+}
+
+/* Media Queries */
+
+@media (max-width:64em) {
+
+    .hero-head{
+        font-size: 3rem;
+    }
+
+    .hero-2-col img{
+        width: 450px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 48em) {
+
+    .grid-content-hero{
+        grid-template-columns: 1fr;
+    }
+
+    .hero-1-col{
+        text-align: center;
+    }
+
+    .hero-2-col img{
+        width: 490px;
+        height: 430px;
+    }
+
+    .grow-together{
+        margin-top: 8rem;
+        padding-inline: 0;
+        margin: 8rem 3rem;
+    }
+
+    .grow-grid, .flowing-grid, .user-grid{
+        grid-template-columns: 1fr;
+    }
+
+
+    .grow-info, .flowing-info, .user-info{
+        padding: 0 2rem;
+        text-align: center;
+        margin: 3rem 0;
+    }
+
+    .footer-section{
+        margin-top: 30rem;
+    }
+
+    .subscribe-box{
+        width: 60%;
+    }
+
+    .box-content{
+        left: 8%;
+        right: 8%;
+    }
+
+    .footer-flex{
+        flex-direction: column;
+    }
+
+    .footer-1-col{
+        width: 100%;
+    }
+
+    .social-logo{
+    justify-content: center;
+    margin-top: 2rem;
+    }
+
+    .footer-text{
+        text-align: center;
+        margin-top: 4rem;
+    }
+
 }
 
 
